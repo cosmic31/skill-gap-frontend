@@ -7,7 +7,7 @@ export const analyzeResume = async (file, jobRole) => {
     formData.append("job_role", jobRole);
 
     const response = await axios.post(
-      "https://skill-gap-backend-3k18.onrender.com",
+      "https://skill-gap-backend-3k18.onrender.com/analyze",
       formData,
       { headers: { "Content-Type": "multipart/form-data" } }
     );
